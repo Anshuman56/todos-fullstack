@@ -107,16 +107,18 @@ export default function App() {
         todos.map((item) => (
           <div
             key={item._id}
-            className="flex justify-between gap-5 border-b py-3"
+            className="flex justify-between align-middle gap-5 border-b py-3"
           >
-            <input
-              type="checkbox"
-              checked={item.complited}
-              onChange={() => handlerComplited(item._id, item)}
-            />
-            <p className={item.complited ? "line-through" : "" + "truncate"}>
-              {item.todo}
-            </p>
+            <div className="flex gap-3">
+              <input
+                type="checkbox"
+                checked={item.complited}
+                onChange={() => handlerComplited(item._id, item)}
+              />
+              <p className={item.complited ? "line-through" : "" + "truncate"}>
+                {item.todo}
+              </p>
+            </div>
             <button onClick={() => handlerDelete(item._id)}>X</button>
           </div>
         ))
