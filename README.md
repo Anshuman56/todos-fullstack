@@ -4,7 +4,7 @@ You can create, update, delete, and retrieve todos using this full stack app.
 
 [Live Demo](https://todos-fullstack-eight.vercel.app/)
 
-![Screenshot](icons.svg "Screenshot")
+![Screenshot](001.png "Screenshot")
 
 ## Features
 
